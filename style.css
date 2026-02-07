@@ -1,0 +1,233 @@
+/* css utama */
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.foto_CVimg-fluid{
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+}
+
+/* Biar di mobile teksnya balik ke tengah, di desktop ke kiri */
+@media (min-width: 768px) {
+    .text-start {
+        text-align: left !important;
+    }
+}
+
+.text-start {
+    text-align: center; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.perkenalan>span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.foto_CV {
+    border-radius: 50%;
+    width: 15%;
+    height: auto;
+}
+
+.Kiri {
+    display: inline-block;
+}
+
+h1 {
+    font-style: unset;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    font-style: oblique;
+}
+
+/*Bagian skill*/
+
+#Skill {
+    text-align: center;
+    background-image: url(https://wallpapers.com/images/hd/blackboard-background-2268-x-1276-eaxyg9odzdsotzk1.jpg);
+    width: auto;
+    height: 130px;
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   /*    Gunanya untuk membuat gambar tidak bergerak ketika di scroll    */
+}
+
+#Skill>button {
+    margin: 3px;
+}
+
+.tabel {
+    width: 800PX;
+    height: 800%;
+}
+
+/*Bagian Education*/
+
+.education-section {
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.C_wbzPpNVgJnoFn0hD7HdQHaDt?rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-position: center;
+    width: 100%;
+    text-align: center;
+}
+
+/*Bagian hobby*/
+
+#Hobby {
+    background: salmon;
+    text-align: center;
+    width: 100%;
+    height: 120%;
+}
+
+.Hobi {
+    justify-content: flex-start;
+    width: 30%;
+    height: 35%;
+    transition: transform 0.5s ease;
+}
+
+
+.gabungan {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+
+.container-hobi {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.Hobi {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    cursor: pointer;
+}
+
+
+.kategori {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.container-hobi:hover .Hobi {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+.container-hobi:hover .kategori {
+    opacity: 1;
+}
+
+/* Bagian portofolio*/
+
+#Portofolio {
+    text-align: center;
+    background-color: #7f7f7f;
+}
+
+.sidebar {
+    font-style: oblique;
+}
+
+.buat {
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.d-blockw-100 {
+    width: 100%;
+    height: 50%;
+    justify-content: flex-start;
+    border-radius: 5%;
+    margin: 1px;
+}
+
+.foto1:hover {
+    cursor: pointer;
+}
+
+.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Bagian contact*/
+
+#Contact {
+    background: rgb(72, 69, 69);
+    height: 530px;
+    color: white;
+    text-align: center;
+}
+
+#Contact>h2 {
+    text-align: center;
+}
+
+.foto2 {
+    border-radius: 50%;
+    width: 30px;
+    height: 10%;
+}
+
+.foto5 {
+    border-radius: 30%;
+    width: 30px;
+    height: 10%;
+}
+
+.data3>div {
+    display: inline-block;
+    /* Membuat "Nama" dan "Alamat" bisa bersandingan */
+    vertical-align: top;
+    /* Supaya sejajar dari atas */
+    margin-right: 50px;
+    /* Memberi jarak antara kolom Nama dan Alamat */
+}
+
+.data3>div>span {
+    color: aliceblue;
+}
+
+#Contact>h4 {
+    text-align: center;
+    color: black;
+}
+
+#Contact>footer {
+    text-align: center;
+    color: black;
+}
+
+hr {
+    color: black;
+}
